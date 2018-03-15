@@ -22,8 +22,6 @@ class bdii::sitebdii(
 
 ) inherits bdii::params {
 
-  include ::bdii
-
   Class['bdii::config'] -> Class['bdii::sitebdii']
 
   package { 'emi-bdii-site':
