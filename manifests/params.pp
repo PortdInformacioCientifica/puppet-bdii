@@ -10,7 +10,7 @@ class bdii::params {
   $slapdthreads         = hiera('bdii::params::slapdthreads', '16')
   $slapdloglevel        = hiera('bdii::params::slapdloglevel', '0')
   # site specific stuff:
-  $siteurls             =  hiera('bdii::params::siteurls','# DUMMY  ldap://localhost:2170/mds-vo-name=resource,o=grid')
+  $siteurls             =  hiera('bdii::params::siteurls',[])
   $sitename             =  hiera('bdii::params::sitename','somesite')
   $sitebdiihost          =  hiera('bdii::params::sitebdiihost','somehost.example.com')
   $sitedesc             =  hiera('bdii::params::sitedesc','somesite descr')
