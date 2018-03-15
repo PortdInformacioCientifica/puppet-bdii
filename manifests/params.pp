@@ -26,7 +26,7 @@ class bdii::params {
   $config               =  hiera('bdii::params::config','puppet')
   $egeeroc              =  hiera('bdii::params::egeeroc','')
   $egeeservice          =  hiera('bdii::params::egeeservice','prod')
-  $grid                 =  hiera('bdii::params::grid','')
+  $grid                 =  hiera('bdii::params::grid',[])
   $wlcgtier             =  hiera('bdii::params::wlcgtier','')
   $otherinfo            = hiera('bdii::params::otherinfo',[]) #could be WLCG_PARENT=stuff
 }

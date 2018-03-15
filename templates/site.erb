@@ -34,10 +34,8 @@ SITE_SUPPORT_EMAIL = <%= @sitesupportemail %>
 OTHERINFO = CONFIG=<%= @config %>
 OTHERINFO = EGEE_ROC=<%= @egeeroc %>
 OTHERINFO = EGEE_SERVICE=<%= @egeeservice %>
-<% if defined?(@grid) -%>
 <% @grid.each do |g| -%>
 OTHERINFO = GRID=<%= g %>
-<% end -%>
 <% end -%>
 OTHERINFO = WLCG_TIER=<%= @wlcgtier %>
 
