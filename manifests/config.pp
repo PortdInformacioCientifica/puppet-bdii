@@ -3,6 +3,7 @@ class bdii::config (
   $port         = $bdii::params::port,
   $user         = $bdii::params::user,
   $slapdconf    = $bdii::params::slapdconf,
+  $ram_size     = $bdii::params::ram_size,
   $delete_delay = $bdii::params::bdiideletedelay,
   $loglevel   = undef,
 ) inherits bdii::params {

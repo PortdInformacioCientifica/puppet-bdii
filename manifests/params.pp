@@ -3,6 +3,7 @@ class bdii::params {
   $port                 = hiera('bdii::params::port','2170')
   $user                 = hiera('bdii::params::user','ldap')
   $slapdconf            = hiera('bdii::params::slapdconf','/etc/bdii/bdii-slapd.conf')
+  $ram_size             = hiera('bdii::params::ram_size','1500M')
   $selinux              = hiera('bdii::params::selinux',false)
   $bdiipasswd           = hiera('bdii::params::bdiipasswd',randompass())
   $bdiihost             = hiera('bdii::params::bdiihost','somehost.example.com')
